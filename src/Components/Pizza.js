@@ -73,7 +73,7 @@ const Pizza = () => {
 
     return ( 
         <div>
-            <h1>FORM AREA</h1>
+            <h1 id="form-area">FORM AREA</h1>
             <Link to="/pizza">Pizza</Link>
             <form action="" id="pizza-form" onSubmit={handleSubmit}>
             <p>{formErrors.name}</p>
@@ -101,14 +101,16 @@ const Pizza = () => {
                     <input 
                         type="checkbox"
                         name="topping1"
+                        value="topping1"
                         checked={formValues.topping1}
-                        onChange={handleChange}                     
+                        onChange={handleChange}                                       
                     />
                     </label>
                     <label>Mushrooms
                     <input 
                         type="checkbox"
                         name="topping2"
+                        value="topping2"
                         checked={formValues.topping2}
                         onChange={handleChange}                      
                     />
@@ -117,6 +119,7 @@ const Pizza = () => {
                     <input 
                         type="checkbox"
                         name="topping3"
+                        value="topping3"
                         checked={formValues.topping3}
                         onChange={handleChange}                      
                     />
@@ -125,6 +128,7 @@ const Pizza = () => {
                     <input 
                         type="checkbox"
                         name="topping4"
+                        value="topping4"
                         checked={formValues.topping4}
                         onChange={handleChange}                    
                     />
